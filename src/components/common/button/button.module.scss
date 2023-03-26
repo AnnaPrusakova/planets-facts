@@ -1,0 +1,15 @@
+@import "styles/variables";
+
+.wrapper {
+  width: 350px;
+  height: 48px;
+  background-color: $dark-blue;
+}
+
+.wrapper:hover {
+  background-color: $dark-gray;
+}
+
+.name {
+  font-size: $h3;
+}

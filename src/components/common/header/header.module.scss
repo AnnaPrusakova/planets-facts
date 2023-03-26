@@ -1,0 +1,53 @@
+@import "styles/variables";
+
+.headerWrapper {
+  margin: 33px 40px 27px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.planets {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Spartan';
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.elem {
+  font-size: $h4;
+  font-weight: 700;
+}
+
+.divider {
+  position: absolute;
+  width: 100%;
+  border: solid 1px $white;
+  mix-blend-mode: normal;
+  opacity: 0.2;
+}
+
+@media (max-width: 768px) {
+  .headerWrapper {
+    height: 95px;
+    margin: 32px 52px 27px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+  }
+
+  .planets {
+    width: 100%;
+  }
+}
