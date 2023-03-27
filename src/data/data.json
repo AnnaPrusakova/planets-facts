@@ -20,7 +20,7 @@
     "images": {
       "planet": "/./planet-mercury.svg",
       "internal": "/./planet-mercury-internal.svg",
-      "geology": "/../public/geology-mercury.png"
+      "geology": "/./geology-mercury.png"
     }
   },
   {
