@@ -55,7 +55,7 @@ export function PlanetsInfo({data}: IPlanetInfoComponent): JSX.Element {
                     <div className={styles.info}>{infoBlock().content}</div>
                     <div className={styles.source}>
                         Source: {' '}
-                        <Link href={infoBlock().source} className={styles.sourceLink}>Wikipedia</Link>
+                        <Link href={infoBlock().source} className={styles.sourceLink} target="_blank">Wikipedia</Link>
                         <Image src={sourceIcon} alt={'source'} className={styles.sourceIcon}/>
                     </div>
                     <div className={styles.btnWrapper}>

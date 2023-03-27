@@ -1,14 +1,14 @@
 import styles from "../styles/Home.module.scss";
 import {Header} from "../src/components/common/header/Header";
-import {Mercury} from "../src/components/pages/mercury/Mercury";
 import Head from "next/head";
+import {Saturn} from "../src/components/pages/saturn/Saturn";
 
-export default function MercuryPage() {
+export default function SaturnPage() {
     return (
         <>
             <Head>
-                <title>Mercury</title>
-                <meta name="description" content="Mercury"/>
+                <title>Saturn</title>
+                <meta name="description" content="Saturn"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -17,7 +17,7 @@ export default function MercuryPage() {
             </Head>
             <main className={styles.main}>
                 <Header/>
-                <Mercury/>
+                <Saturn/>
             </main>
         </>
     );
