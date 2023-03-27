@@ -16,7 +16,7 @@ export function Button({
 	return (
 		<div
 			className={cn(styles.wrapper, className)}
-			style={{ backgroundColor: isActive ? activeColor : 'white' }}
+			style={{ backgroundColor: isActive ? activeColor : undefined }}
 			onClick={handleOnClick}
 		>
 			<div className={styles.text}>
