@@ -1,0 +1,45 @@
+@import "styles/variables";
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 24px;
+}
+
+.dividerWrapper {
+  position: relative;
+}
+
+.divider {
+  width: 100%;
+  border: solid 1px $white;
+  opacity: 0.1;
+}
+
+.elem {
+  font-family: 'Spartan';
+  font-weight: 700;
+  font-size: 9px;
+}
+
+.active {
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  top: -1px;
+  background-color: $wave-blue;
+}
+
+.active.overview {
+  left: 37px;
+}
+
+.active.structure {
+  left: 155px;
+}
+
+.active.geology {
+  left: 265px;
+}

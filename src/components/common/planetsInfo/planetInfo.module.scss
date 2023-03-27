@@ -72,7 +72,43 @@
   margin-bottom: 16px;
 }
 
+.infoBlock {
+
+}
+
 @media (max-width: 375px) {
+  .mainBlock {
+    margin: 95px 0 28px;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .infoBlock {
+    margin-top: 98px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name {
+    font-size: $h2;
+  }
+
+  .info {
+    text-align: center;
+    font-size: $h4;
+    line-height: 22px;
+  }
+
+  .source {
+    font-size: $h4;
+  }
+
+  .geologyImg {
+    top: 95px;
+    left: 30px;
+  }
+
   .factsBlocks {
     flex-direction: column;
   }

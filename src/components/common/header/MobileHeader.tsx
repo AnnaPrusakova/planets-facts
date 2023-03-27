@@ -5,6 +5,7 @@ import hamburgerMenu from "../../../../public/icon-hamburger.svg";
 import cn from "classnames";
 import {planets} from "../../../data/planets";
 import arrowIcon from "../../../../public/icon-chevron.svg";
+import Link from "next/link";
 
 export function MobileHeader(): JSX.Element {
     const [isMenuOpen, setMenuOpen] = useState<boolean>();
@@ -29,7 +30,8 @@ export function MobileHeader(): JSX.Element {
                 return '#497EFA';
         }
     };
-    return (<div className={styles.headerWrapperMobile}>
+    return (
+        <div className={styles.headerWrapperMobile} style={{position: isMenuOpen ? 'fixed' : 'sticky'}}>
         <div className={styles.menuTitleMobile}>
             <div className={styles.title}>THE PLANETS</div>
             <Image src={hamburgerMenu} className={cn({[styles.hamburgerIcon]: isMenuOpen})}
@@ -39,17 +41,17 @@ export function MobileHeader(): JSX.Element {
         <div className={styles.divider}></div>
         {isMenuOpen &&
             <div className={styles.mobileMenu}>{planets.map((elem, i) =>
-                <div key={i}>
+                <Link href={`/${elem.toLocaleLowerCase()}`} key={i}>
                     <div className={styles.mobileElem}>
                         <div className={styles.planetName}>
                             <div className={styles.circle}
                                  style={{backgroundColor: `${checkColor(elem)}`}}></div>
-                            <span>{elem}</span>
+                            <span className={styles.name}>{elem}</span>
                         </div>
                         <Image src={arrowIcon} alt={'arrow'}/>
                     </div>
                     {elem !== 'NEPTUNE' && <div className={styles.dividerMenu}></div>}
-                </div>
+                </Link>
             )}
             </div>
         }
