@@ -1,6 +1,79 @@
-.infoBlocks {
+@import "styles/variables";
+
+.mainBlock {
+  width: 100%;
+  flex-wrap: nowrap;
+  margin: 100px 0 80px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.geologyWrapper {
+  position: relative;
+}
+
+.geologyImg {
+  position: absolute;
+  left: 65px;
+  top: 230px;
+}
+
+.btnWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name {
+  font-weight: 400;
+  font-size: $h1;
+  text-transform: uppercase;
+  margin-bottom: 23px;
+}
+
+.info {
+  width: 350px;
+  height: 150px;
+  font-family: 'Spartan';
+  font-weight: 400;
+  font-size: $body-font;
+}
+
+.source {
+  font-family: 'Spartan';
+  font-weight: 400;
+  font-size: $body-font;
+  opacity: 0.5;
+  margin-bottom: 40px;
+}
+
+.sourceLink {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.sourceIcon {
+  margin-left: 8px;
+  text-align: center;
+}
+
+.factsBlocks {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  margin-bottom: 56px;
+}
+
+.activeBtn {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 375px) {
+  .factsBlocks {
+    flex-direction: column;
+  }
 }

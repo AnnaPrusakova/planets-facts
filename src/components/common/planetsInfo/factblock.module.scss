@@ -45,6 +45,18 @@
     height: 48px;
   }
 
+  .infoBlock {
+    padding: 9px 24px 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title {
+    margin-bottom: 0;
+  }
+
   .info {
     font-size: 20px;
   }

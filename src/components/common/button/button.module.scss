@@ -4,12 +4,31 @@
   width: 350px;
   height: 48px;
   background-color: $dark-blue;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .wrapper:hover {
   background-color: $dark-gray;
 }
 
+.text {
+  width: 350px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 0 11px 12px;
+}
+
+.num {
+  font-family: 'Spartan';
+  font-weight: 700;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
 .name {
   font-size: $h3;
+  margin-left: 25px;
 }
