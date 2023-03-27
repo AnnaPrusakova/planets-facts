@@ -1,1 +1,10 @@
-export const planets = ['MERCURY', 'VENUS', 'EARTH', 'MARS', 'JUPITER', 'SATURN', 'URANUS', 'NEPTUNE'];
+export const planets = [
+	'MERCURY',
+	'VENUS',
+	'EARTH',
+	'MARS',
+	'JUPITER',
+	'SATURN',
+	'URANUS',
+	'NEPTUNE'
+];

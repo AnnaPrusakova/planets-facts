@@ -37,13 +37,13 @@
 .info {
   width: 350px;
   height: 150px;
-  font-family: 'Spartan';
+  font-family: 'Spartan', ui-monospace;
   font-weight: 400;
   font-size: $body-font;
 }
 
 .source {
-  font-family: 'Spartan';
+  font-family: 'Spartan', ui-monospace;
   font-weight: 400;
   font-size: $body-font;
   opacity: 0.5;
