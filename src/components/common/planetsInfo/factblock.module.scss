@@ -1,0 +1,51 @@
+@import "styles/variables";
+
+.factBlock {
+  width: 255px;
+  height: 128px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.infoBlock {
+  padding: 20px 0 27px 23px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: $h4;
+  opacity: 0.5;
+  font-family: 'Spartan';
+  margin-bottom: 5px;
+}
+
+.info {
+  font-weight: 400;
+  font-size: $h2;
+}
+
+@media (max-width: 768px) {
+  .factBlock {
+    width: 164px;
+    height: 88px;
+  }
+
+  .title {
+    font-size: 8px;
+  }
+
+  .info {
+    font-size: 24px;
+  }
+
+}
+
+@media (max-width: 375px) {
+  .factBlock {
+    width: 327px;
+    height: 48px;
+  }
+
+  .info {
+    font-size: 20px;
+  }
+}
