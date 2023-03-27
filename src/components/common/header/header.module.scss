@@ -72,14 +72,31 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: 'Spartan';
-  opacity: 0.75;
+  font-family: 'Spartan', ui-monospace;
   cursor: pointer;
 }
 
 .elem {
   font-size: $h4;
   font-weight: 700;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.elem:hover {
+  color: $white;
+}
+
+.elem:active {
+  color: $white;
+}
+
+.elemActive {
+  position: absolute;
+  top: 0;
+  height: 4px;
+  width: 68px;
+  background-color: $wave-blue;
+
 }
 
 .divider {

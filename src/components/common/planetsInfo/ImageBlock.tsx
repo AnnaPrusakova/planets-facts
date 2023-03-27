@@ -1,6 +1,7 @@
 import { keys } from '../../../data/planetMenu';
 import styles from './planetInfo.module.scss';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export function ImageBlock({ block, images, isMobile }): JSX.Element {
 	const image = () => {
@@ -13,7 +14,7 @@ export function ImageBlock({ block, images, isMobile }): JSX.Element {
 	};
 
 	return (
-		<div>
+		<motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
 			{block === keys[2] ? (
 				<div className={styles.geologyWrapper}>
 					<Image
@@ -38,6 +39,6 @@ export function ImageBlock({ block, images, isMobile }): JSX.Element {
 					height={isMobile ? 111 : 290}
 				/>
 			)}
-		</div>
+		</motion.div>
 	);
 }

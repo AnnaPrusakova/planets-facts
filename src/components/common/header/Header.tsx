@@ -3,17 +3,23 @@ import { planets } from '../../../data/planets';
 import { useWindowSize } from '../../../hooks/windowSize';
 import { MobileHeader } from './MobileHeader';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export function Header(): JSX.Element {
+	const [active, setActive] = useState<string>('');
 	const size = useWindowSize();
 
 	const menuElem = () =>
 		planets.map((elem, i) => (
 			<Link
-				href={`/${elem.toLocaleLowerCase()}`}
+				href={`/planets/${elem.toLocaleLowerCase()}`}
 				className={styles.elem}
 				key={i}
+				onClick={() => setActive(elem.toLocaleLowerCase())}
 			>
+				{active === elem.toLocaleLowerCase() && (
+					<div className={styles.elemActive}></div>
+				)}
 				{elem}
 			</Link>
 		));
