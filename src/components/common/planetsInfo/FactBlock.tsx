@@ -1,6 +1,7 @@
 import styles from './factBlock.module.scss';
+import { IFactBlock } from './planetInfo.interfaces';
 
-export function FactBlock({ title, facts }): JSX.Element {
+export function FactBlock({ title, facts }: IFactBlock): JSX.Element {
 	return (
 		<div className={styles.factBlock}>
 			<div className={styles.infoBlock}>

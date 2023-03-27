@@ -2,14 +2,21 @@ import { keys } from '../../../data/planetMenu';
 import styles from './planetInfo.module.scss';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { IImageBlock } from './planetInfo.interfaces';
 
-export function ImageBlock({ block, images, isMobile }): JSX.Element {
+export function ImageBlock({
+	block,
+	images,
+	isMobile
+}: IImageBlock): JSX.Element {
 	const image = () => {
 		switch (block) {
 			case keys[0]:
 				return images.planet;
 			case keys[1]:
 				return images.internal;
+			default:
+				return images.planet;
 		}
 	};
 

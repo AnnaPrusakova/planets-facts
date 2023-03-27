@@ -10,12 +10,12 @@ export interface IPlanetInfo {
 	images: IImages;
 }
 
-interface IContent {
+export interface IContent {
 	content: string;
 	source: string;
 }
 
-interface IImages {
+export interface IImages {
 	planet: string;
 	internal: string;
 	geology: string;

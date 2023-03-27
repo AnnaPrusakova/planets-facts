@@ -5,6 +5,7 @@ import Image from 'next/image';
 import sourceIcon from '../../../../public/icon-source.svg';
 import { ButtonMenu } from './ButtonMenu';
 import { keys } from '../../../data/planetMenu';
+import { IMainBlock } from './planetInfo.interfaces';
 
 export function MainBlock({
 	block,
@@ -16,7 +17,7 @@ export function MainBlock({
 	geology,
 	active,
 	handleButtonClick
-}): JSX.Element {
+}: IMainBlock): JSX.Element {
 	const infoBlock = () => {
 		switch (block) {
 			case keys[0]:
@@ -25,6 +26,8 @@ export function MainBlock({
 				return structure;
 			case keys[2]:
 				return geology;
+			default:
+				return overview;
 		}
 	};
 

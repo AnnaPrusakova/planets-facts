@@ -1,8 +1,12 @@
 import styles from './buttonMenuMobile.module.scss';
 import cn from 'classnames';
 import { keys, menuMobile } from '../../../data/planetMenu';
+import { IButtonMenuMobile } from './planetInfo.interfaces';
 
-export function ButtonMenuMobile({ onClick, active }): JSX.Element {
+export function ButtonMenuMobile({
+	onClick,
+	active
+}: IButtonMenuMobile): JSX.Element {
 	return (
 		<>
 			<div className={styles.wrapper}>

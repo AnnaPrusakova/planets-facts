@@ -1,8 +1,12 @@
 import styles from './planetInfo.module.scss';
 import { Button } from '../button/Button';
 import { keys, menu } from '../../../data/planetMenu';
+import { IButtonMenu } from './planetInfo.interfaces';
 
-export function ButtonMenu({ onButtonClick, active }): JSX.Element {
+export function ButtonMenu({
+	onButtonClick,
+	active
+}: IButtonMenu): JSX.Element {
 	return (
 		<div className={styles.btnWrapper}>
 			<Button
