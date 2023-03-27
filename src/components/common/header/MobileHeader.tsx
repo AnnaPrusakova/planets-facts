@@ -49,7 +49,11 @@ export function MobileHeader(): JSX.Element {
 			{isMenuOpen && (
 				<div className={styles.mobileMenu}>
 					{planets.map((elem, i) => (
-						<Link href={`/planets/${elem.toLocaleLowerCase()}`} key={i}>
+						<Link
+							href={`/planets/${elem.toLocaleLowerCase()}`}
+							key={i}
+							onClick={() => setMenuOpen(false)}
+						>
 							<div className={styles.mobileElem}>
 								<div className={styles.planetName}>
 									<div
