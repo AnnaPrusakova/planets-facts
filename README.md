@@ -25,12 +25,24 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+#### Desktop
 
+![Desktop-1](./public/desktop-1.png)
+![Desktop-2](./public/desktop-2.png)
+![Desktop-3](./public/desktop-3.png)
+
+#### Tablet
+
+![Tablet-1](./public/tablet-1.png)
+
+#### Mobile
+
+![Mobile-1](./public/mobile-1.png)
+![Mobile-2](./public/mobile-menu.png)
 
 ### Links
 
-- Live Site URL: [Live](https://planets-facts-f1lnu2lqs-annaprusakova.vercel.app/planets/mercury)
+- Live Site URL: [Live](https://planets-facts-sigma.vercel.app/planets/mercury)
 
 ## My process
 
