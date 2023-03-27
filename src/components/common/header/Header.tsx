@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 export function Header(): JSX.Element {
-	const [active, setActive] = useState<string>('');
+	const [active, setActive] = useState<string>('mercury');
 	const size = useWindowSize();
 
 	const menuElem = () =>
